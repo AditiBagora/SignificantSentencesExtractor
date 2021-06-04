@@ -1,0 +1,57 @@
+ Notice that while the application of the operator class is enforced upon the layer, each RF implements the transformation in a way that generates optimal mapping.
+ This model is based on the premise that instead of taking the feature detector to the pattern (multiplying the number of feature detectors), we bring the pattern to the feature detector (multiplying the pathways.)
+ The work done by Fukushima will first be examined, representing earlier models of its class.
+ The output of those feature detectors represents the degree of success with which a particular operator maps into the optimal feature.
+ The feature with best degree of success, can thus be said to have been recognized.
+ d) Each layer contains feature detecting cells with increasing level of conceptual complexity, the higher the layer level.
+ Those operators are divided into classes.
+ 
+ The consensus is then fed back to lower levels, allowing each RF to reset its own image of the retina according to the new transformation.
+ For instance, on the lowest layer, the classes are displacement, scaling, and rotation.
+ The model in this paper follows the latter approach.
+ Second, each learned template is duplicated in many positions after being trained in only one position: this is problematic for hardware implementations as well as being biologically implausible.
+ The retina is thus divided into several marginally overlapping receptive fields (RF's) of uniform size.
+ Simulating this model necessitated additional hardware that was not originally envisioned.
+ A new model, which attempts to overcome their limitations, will then be described.
+ Many models in the neural network literature applied those principles.
+ 
+ Focus will be centered on Fukushima's model, because it is the most elaborate and has been shown to work with a (relatively) large retina of 128x128 pixels.
+ Finally, on the topmost layer, a feature detector which conceptually represents an object is selected and the whole process terminates.
+ Then, the optimum values across the layer from each RF are combined to choose the best class of operators.
+ Others borrowed from the brain the most important principles and tried to cast them in any model that could be demonstrated to work.
+ For example, the displacement class has variations which corresponds to the direction and the amount of the displacement.
+ The higher level neurons take their inputs from groups at the lower level that recognize the same object at different positions.
+ 
+ 
+ First, hardware is not amiable to large scale implementations: in one case, a simple 19x19 retina, 4 layer network implementation required over 40 thousand cells, excluding non-responding ones.
+ b) The neuron's output can be viewed as a boolean corresponding to on and off activation states, or as a positive (bounded) real number representing the activation rate of the neuron.
+ From this large pool of feature detector outputs within a receptive field, the best variation and degree for each class is selected.
+ As the example of the neocognitron shows, duplicating complex feature detectors is costly, in terms of number of cells.
+ The net effect is feature detectors tolerant of displacement and slight distortion.
+ This choice represents the consensus as to which class of operators best maps into some feature.
+ a) The neuron (as a threshold element) is the building block of those models. 
+ While its design premise is simple, the number of cells required to implement it is proportional to the number of RF's, the number of classes, the number of variations within a class, and the number of features within each layer.
+ Many researches have attempted to capture the brain's pattern recognizing capability in abstract models.
+ c) The pattern recognizing network is layered.
+ What we hope to achieve is a reduction in the overall number of cells.
+ On the next level, within a layer, feature detectors take their input from the output of the operators weighed by the optimal feature pattern.
+ Fukushima's neocognitron suffers the following problems.
+ 
+ 
+ A similar process of transformation and recognition is carried out in the second layer.
+ Models which loosely follow the brain's architecture, have done so based on the following elementary principles:
+ In their attempts, some have tried to remain faithful to the biological principles underlying the functioning and organization of the brain. 
+ 
+ Having recognized a feature for each RF on the first layer, the output of the first layer is fed into the second layer.
+ 
+ Finally the paper will conclude with a description of future improvements to the model.
+ After one class is selected within a layer, the class is then inhibited allowing another class to win in a second round.
+ The lower level is made up of groups of template matchers.
+ Each class has its variations within each RF, depending on where the operator maps from, and the degree of the mapping.
+ 
+ Simple hard-wired operators provide a many-to-one mapping from the RF area to the feature detector.
+ On higher layers, the classes include positional and set operators.
+ 
+ 
+ The process is then repeated until a threshold of desirable outcome is exceeded.
+ It has been shown that the brain uses feature detection, in its visual pattern recognition task.
